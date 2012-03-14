@@ -1,5 +1,24 @@
 alert("JavaScript works!");
-//json data
+
+
+var zombies = 100
+
+//argument: object, property: object, method: function, method: procedure, method: accessor
+var john = {
+	"status": "living",
+	"position": "leader of others"
+	};
+	var protectOthers = function (z){
+		var johnLeaves = z - 6,
+			total = "John leaves "+ johnLeaves + " zombies alive";
+			return total;
+};
+
+var totalJohn = protectOthers(100)
+
+
+
+//json data, property: object, nested loop, for loop
 var json = {
 	"people": {
 		"friends": [
@@ -33,4 +52,6 @@ var json = {
 for (var key in json.people) {
 	var groups = json.people[key]; 
 };
+
+console.log(totalJohn);
 console.log(json);
