@@ -21,7 +21,7 @@ var john = {
 var totalJohn = protectOthers(100)
 
 /* "bravo" - json data, property: object, property: array, 
-nested loop, for loop, */
+nested loop, for loop */
 var json = {
 	"people": {
 		"friends": [
@@ -56,14 +56,52 @@ for (var key in json.people) {
 	var groups = json.people[key]; 
 };
 
-// conditional-true, argument: boolean, property: boolean, 
-if ( johnRational === true) {
-	console.log("John allows me to take the place of " + json.people.friends[0].name + "."); 
-} else {
-	console.log("We'll all die here.");
+/* conditional-true, argument: string, property: string, 
+argument: boolean, property: boolean, return string*/
+
+var escape = function(d) {
+		var smartJohn = d + " John allow me to take the place of " 
+						+ json.people.friends[0].name + "?"; 
+		var stupidJohn = d +" it feel like we'll all die here?";
+		if ( johnRational === true) {
+			smartJohn 
+			} else {
+				stupidJohn }
+				
+			return smartJohn;
 };
 
+var canWe = escape("Does")
+;
+//conditional-true
+console.log(canWe);
+
+/* conditional-true, argument: string, property: string, 
+argument: boolean, property: boolean, return string*/
+
+var escape = function(d) {
+		var smartJohn = d + " John allow me to take the place of " 
+						+ json.people.friends[0].name + "?"; 
+		var stupidJohn = d +" it feel like we'll all die here?";
+		if ( johnRational === false) {
+			smartJohn 
+			} else {
+				stupidJohn }
+				
+			return stupidJohn;
+};
+
+var canWe = escape("Does")
+;
+
+
+
+
+
+//conditional-false
+console.log(canWe);
 // alpha
 console.log(totalJohn);
 // bravo
 console.log(json);
+
