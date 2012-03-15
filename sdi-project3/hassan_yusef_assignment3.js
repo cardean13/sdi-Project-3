@@ -1,9 +1,13 @@
 alert("JavaScript works!");
 
 
-var zombies = 100
 
-//argument: object, property: object, method: function, method: procedure, method: accessor
+var zombies = 100
+	johnRational = true 
+
+
+/* "alpha" - argument: number, argument: object, property: number, property: object, 
+method: function, method: procedure, method: accessor, math,  return */
 var john = {
 	"status": "living",
 	"position": "leader of others"
@@ -16,9 +20,8 @@ var john = {
 
 var totalJohn = protectOthers(100)
 
-
-
-//json data, property: object, nested loop, for loop
+/* "bravo" - json data, property: object, property: array, 
+nested loop, for loop, */
 var json = {
 	"people": {
 		"friends": [
@@ -53,5 +56,14 @@ for (var key in json.people) {
 	var groups = json.people[key]; 
 };
 
+// conditional-true, argument: boolean, property: boolean, 
+if ( johnRational === true) {
+	console.log("John allows me to take the place of " + json.people.friends[0].name + "."); 
+} else {
+	console.log("We'll all die here.");
+};
+
+// alpha
 console.log(totalJohn);
+// bravo
 console.log(json);
