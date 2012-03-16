@@ -1,10 +1,11 @@
-alert("JavaScript works!");
+alert("Stuck in a base-camp");
 
 
 
-var zombies = 100
-	johnRational = true 
-
+var zombies = 100,
+	johnRational = true
+	
+;
 
 /* "alpha" - argument: number, argument: object, property: number, property: object, 
 method: function, method: procedure, method: accessor, math,  return */
@@ -57,7 +58,7 @@ for (var key in json.people) {
 };
 
 /* conditional-true, argument: string, property: string, 
-argument: boolean, property: boolean, return string*/
+argument: boolean, property: boolean, local variables, return string*/
 
 var escape = function(d) {
 		var smartJohn = d + " John allow me to take the place of " 
@@ -76,7 +77,26 @@ var canWe = escape("Does")
 //conditional-true
 console.log(canWe);
 
-/* conditional-true, argument: string, property: string, 
+// argument: array, proprty:array, while loop, nested conditional
+survivors = [
+	"John",
+	"Jd",
+	"Jeff",
+	"Sara"		
+];
+
+while (zombies > 94) {
+	console.log(zombies + " zombies left alive.");
+	zombies--;
+if ( zombies > 94 ) {
+	console.log(survivors[0] + " is going strong")
+		} else {
+	console.log("He can't keep it up, there's too many!")};
+};
+		
+
+
+/* conditional-false, argument: string, property: string, 
 argument: boolean, property: boolean, return string*/
 
 var escape = function(d) {
@@ -93,13 +113,13 @@ var escape = function(d) {
 
 var canWe = escape("Does")
 ;
-
-
-
-
-
 //conditional-false
 console.log(canWe);
+
+//array
+console.log( survivors[0] + " gets over run");
+
+
 // alpha
 console.log(totalJohn);
 // bravo
